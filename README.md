@@ -17,16 +17,20 @@ Setup:
     * logs:PutLogEvents
 3. Create a new role of type  and attach policy
 4. Create a new custom Lambda Function
-    * runtime:python3.6
-    * name:Cloudtrail-Daily-Email
-    * handler:Cloudtrail-Daily-Email.handler
-    * trigger:Cloudwatch Events
-        * This cron will trigger at 7:00UTC every day: cron(0 7 * * ? *)
-    * edit code inline and paste in the code from this repo
-5. Configure environmental variables (all required):
-    * toEmails (comma seperated list)
-    * fromEmail
-    * sesRegion
+    1. Author from scratch
+    2. Trigger
+        1. Cloudwatch Events
+        2. Create New Rule
+        3. Schedule Expression
+        4. This cron will trigger at 7:00UTC every day: cron(0 7 * * ? *)
+    3. name: Cloudtrail-Daily-Email
+    4. runtime: python 3.6
+    5. Paste in code from this repo
+    6. Configure environmental variables (all required):
+        * toEmails (comma seperated list)
+        * fromEmail
+        * sesRegion
+    7. handler: Cloudtrail-Daily-Email.handler
 
 
 Example IAM policy:
