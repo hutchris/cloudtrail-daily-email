@@ -31,6 +31,8 @@ Setup:
         * fromEmail
         * sesRegion
     7. handler: Cloudtrail-Daily-Email.handler
+    8. Permissions: Choose an existing role
+    9. Select Role created earlier
 
 
 Example IAM policy:
