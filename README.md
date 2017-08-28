@@ -10,11 +10,11 @@ Setup:
 
 1. Configure AWS SES in an available region and verify at least one email address
 2. Create an IAM policy for this Lambda Function. Required permission:
-       *ses:SendEmail
-       *cloudtrail:LookupEvents
-       *logs:CreateLogGroup
-       *logs:CreateLogStream
-       *logs:PutLogEvents
+    * ses:SendEmail
+    * cloudtrail:LookupEvents
+    * logs:CreateLogGroup
+    * logs:CreateLogStream
+    * logs:PutLogEvents
 3. Create a new role of type  and attach policy
 4. Create a new custom Lambda Function
     *runtime:python3.6
