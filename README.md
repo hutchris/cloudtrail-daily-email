@@ -23,7 +23,7 @@ Setup:
     * trigger:Cloudwatch Events
         * This cron will trigger at 7:00UTC every day: cron(0 7 * * ? *)
     * edit code inline and paste in the code from this repo
-5. Configure environmental variables:
+5. Configure environmental variables (all required):
     * toEmails (comma seperated list)
     * fromEmail
     * sesRegion
